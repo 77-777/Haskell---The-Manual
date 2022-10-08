@@ -101,6 +101,12 @@ Please use your respective *nix package manager.
 Yesod
 ```
 
+### Web Automation
+
+```haskell
+
+```
+
 ### Data Structures
 
 ```haskell
