@@ -28,9 +28,9 @@ Click the sections below to expand.
 
 * Ecosystem & Environment
   * ? - primary build and project manager
-  * ? - package manager
+  * Cabal - package manager
   * todo.
-  * ghc - the Ocaml Compiler. 
+  * GHC - the Glasgow Haskell Compiler. 
 
 Please use your respective *nix package manager.
 
@@ -199,7 +199,7 @@ Char, Bool, Int, Integer, Double
   
 ```
 
-### Variants & Polymorphism
+### Polymorphism
 
 ```haskell
 
@@ -242,8 +242,6 @@ Char, Bool, Int, Integer, Double
 ```
 
 ### Functors
-
-### Pointers/Refs
 
 <br>
 <br>
@@ -355,8 +353,8 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 * Dependency Injection
   * A concept used to manage portability and hotswap, as common usecases. One implementation of dependency injection is the IoC container for dependency inversion.
 
-* Module Types
-  * Ocaml's "interfaces" to modules.
+* Typeclasses
+  * Haskell's "interfaces" to modules.
 
 * Monads
   * 
@@ -426,7 +424,7 @@ Cabal is the official Haskell package manager.
 
 Click each module to expand and see their exposed functions and types.
 
-```ocaml
+```haskell
 (* Importable Modules *)
 
 
