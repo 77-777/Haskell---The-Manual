@@ -101,6 +101,12 @@ Please use your respective *nix package manager.
 Yesod
 ```
 
+### Data Structures
+
+```haskell
+
+```
+
 ### Logging
 ```haskell
 
