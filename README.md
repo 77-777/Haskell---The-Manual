@@ -115,6 +115,8 @@ Yesod
 ### Config Storage
 
 ### Regex & Levenshtein
+  
+### Cryptography
 
 ### Parsing HTML/JSON/XML
 
@@ -125,6 +127,8 @@ Yesod
 
 
 ### Database Access / ORM
+  
+### Graphics
 
 ### Keywords in Haskell
 
