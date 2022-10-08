@@ -2,11 +2,13 @@
 
 > Pragmatic information about Functional Programming and Haskell.
 
+<br>
+<br>
+
 DRAFT.
 
 Work in progress.
 
-<br>
 <br>
 <br>
 
@@ -118,9 +120,34 @@ Yesod
 
 ### Database Access / ORM
 
-### Keywords in OCaml
+### Keywords in Haskell
 
 ```haskell
+
+-- Packages & Modules --
+import, module, where, instance, deriving
+
+-- Imperative & Unit IO
+do, ()
+
+as
+-- Variable scope --
+let .. in
+
+-- Data & Objects
+data, type, class
+
+-- Control Flow & Guards/Pattern Matching --
+if, else, then, forall, case, 
+
+-- Others --
+default
+hiding
+proc
+
+-- Types & Options --
+
+Char, Bool, Int, Integer, Double
 
 ```
 
