@@ -321,7 +321,7 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
   * Functional paradigm prides itself on the notion that some (depends on language) functions are ultimately variables, can be declared as such, can be passed as arguments and can be returned. This is the notion of function pointers for those who know C. Commonly used for callbacks, events and other procedural code.
 
 * Higher Order Functions
-  * Functions that are treated as First Class Citizens. Basically function pointers. Ocaml functions are all higher order. In Haskell, not all functions are higher order functions.
+  * Functions that are treated as First Class Citizens. Basically function pointers. In Haskell, not all functions are higher order functions.
 
 * Function Composition
   * Calling functions which rely on values returned by calling another function. E.g. f(g(x)).
@@ -331,9 +331,6 @@ Clarity. Avoid surprises. DRY principle. SOLID principle if using OOP.
 
 * Currying
   * Complex functions which have a high arity need to be broken down. This simplification process is called currying.
-
-* Variants
-  * Ocaml's type system for creating generics and polymorphic values.
 
 * Functors
   * Factory pattern kin.
