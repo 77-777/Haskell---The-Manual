@@ -222,9 +222,9 @@ addNumbers :: Integer -> Integer -> Integer
 addNumbers a b = a + b
 
 
-getConstant :: Integer -> Integer
-getConstant 0 = 0
-getConstant 1 = 1
+getConstant :: Double -> Integer
+getConstant 0.0 = 0
+getConstant 1.0 = 1
 
 
 switcher :: String -> Bool
