@@ -200,24 +200,70 @@ Char, Bool, Int, Integer, Double
 ### Types & Records
 
 ```haskell
-
+data Vehicle = Vehicle Integer String Double
+  
+data Vehicle = Vehicle {
+  year_release :: Int,
+  make :: String,
+  speed :: Double
+}
+  
+let my_vehicle = Vehicle { year_release = 2020, make = "Mitsubishi", speed = 20.0 }
 ```
 
 ### Modules
 
 ```haskell
+import BoxMod
 
+
+module Car
+  where
+  
+  getSpeed :: Int
+  getSpeed = 5
+  
+  
+module Computation (
+  addNum,
+  subNum
+) where
+  
+  addNum :: Int -> Int -> Int
+  addNum x y = x + y
+  
+  subNum :: Int -> Int -> Int
+  subNum x y = x - y
+  
+  generateValue :: IO
+  generateValue = do
+    side_effect_call
+  
+  isTrue = do
+    if 1 == 1 then
+      True
+    else
+      False
 ```
 
 ### Functions
 
 ```haskell
 
+increment y = y + 1
+  
+  
 getIntValue x
   | x == "5" = 5
   | y == "7" = 7
 
+  
+isOneHundred :: Integer -> Bool
+isOneHundred a
+  | a == 100 = True
+  | _ == _ = False
 
+  
 addNumbers :: Integer -> Integer -> Integer
 addNumbers a b = a + b
 
@@ -227,9 +273,14 @@ getConstant 0.0 = 0
 getConstant 1.0 = 1
 
 
-switcher :: String -> Bool
+switcher :: String -> String
 switcher x | x == "Hi" = "Hello"
 switcher y | y == "Bye" = "Gooodbye
+  
+main :: IO
+main = do
+  increment 5
+  addNumbers 3 2
 ```
 
 ### Polymorphism
