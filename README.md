@@ -212,7 +212,24 @@ Char, Bool, Int, Integer, Double
 ### Functions
 
 ```haskell
-  
+
+getIntValue x
+  | x == "5" = 5
+  | y == "7" = 7
+
+
+addNumbers :: Integer -> Integer -> Integer
+addNumbers a b = a + b
+
+
+getConstant :: Integer -> Integer
+getConstant 0 = 0
+getConstant 1 = 1
+
+
+switcher :: String -> Bool
+switcher x | x == "Hi" = "Hello"
+switcher y | y == "Bye" = "Gooodbye
 ```
 
 ### Polymorphism
