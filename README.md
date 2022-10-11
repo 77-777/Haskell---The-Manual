@@ -249,34 +249,36 @@ module Computation (
 ### Functions
 
 ```haskell
-
+-- Simple label. --
 increment y = y + 1
+
+-- Explicit type --
+addNumbers :: Integer -> Integer -> Integer
+addNumbers a b = a + b
   
-  
+-- Pattern matching. --
+getConstant :: Double -> Integer
+getConstant 0.0 = 0
+getConstant 1.0 = 1
+
+-- Guards --
 getIntValue x
   | x == "5" = 5
   | y == "7" = 7
 
-  
+-- Booleans --
 isOneHundred :: Integer -> Bool
 isOneHundred a
   | a == 100 = True
   | _ == _ = False
 
-  
-addNumbers :: Integer -> Integer -> Integer
-addNumbers a b = a + b
-
-
-getConstant :: Double -> Integer
-getConstant 0.0 = 0
-getConstant 1.0 = 1
-
-
+--  --
 switcher :: String -> String
 switcher x | x == "Hi" = "Hello"
 switcher y | y == "Bye" = "Gooodbye
   
+-- Side effect unit return value --
+
 main :: IO
 main = do
   increment 5
@@ -292,19 +294,43 @@ main = do
 ### Variables
 
 ```haskell
-
+main :: IO
+main = do
+  let x = 10
+  let y :: int = 20
+  x <- 30
+  y <- 50
+  
+  PutStrLn x
+  Exit 0
 ```
 
 ### If Statements
 
 ```haskell
-
+main :: IO
+main = do
+  let x = 20
+  
+  if x == 20 then
+    PutStrLn "Twenty"
+  else
+    PutStrLn "Not Twenty"
 ```
 
 ### Looping & Control Flow
 
 ```haskell
-  
+
+-- Haskell is a pure functional language. There is no "for", "while" loop. --
+
+-- You instead use recursion --
+
+recursiveFunc :: Int -> Int
+recursiveFunc x 
+  | x == 0 = 0
+  | _ == _ = recursiveFunc x
+
 ```
 
 ### Recursion & List Manipulation/Patterns
