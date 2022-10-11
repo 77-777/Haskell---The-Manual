@@ -44,78 +44,103 @@ Please use your respective *nix package manager.
 ### Console Arguments & Printing
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### File IO
 
 ```haskell
-  
+
+-- Reading files --
+main :: IO
+main = do
+  let file_name = "my_file.txt"
+  buffer <- readFile file_name
+
+-- Writing files --
+main :: IO
+main = do
+  let file_name = "my_file.txt"
+  writeFile file_name "Content to write."
 ```
 
 ### Directory & File Operations
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### Data Type Conversion
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### String Handling
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### Threading & Process Handling
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### Sockets
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### GUI
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### Web Requests
 
 ```haskell
-  
+main :: IO
+main = do
 ```
 
 ### Web Framework
 
 ```haskell
 Yesod
+  
+main :: IO
+main = do
 ```
 
 ### Web Automation
 
 ```haskell
-
+main :: IO
+main = do
 ```
 
 ### Data Structures
 
 ```haskell
-
+main :: IO
+main = do
 ```
 
 ### Logging
 ```haskell
-
+main :: IO
+main = do
 ```
 
 ### Config Storage
@@ -301,7 +326,7 @@ main = do
   x <- 30
   y <- 50
   
-  PutStrLn x
+  putStrLn x
   Exit 0
 ```
 
@@ -313,9 +338,9 @@ main = do
   let x = 20
   
   if x == 20 then
-    PutStrLn "Twenty"
+    putStrLn "Twenty"
   else
-    PutStrLn "Not Twenty"
+    putStrLn "Not Twenty"
 ```
 
 ### Looping & Control Flow
@@ -331,6 +356,8 @@ recursiveFunc x
   | x == 0 = 0
   | _ == _ = recursiveFunc x
 
+-- You can also use a functor map call to apply a function on a list of items. --
+  
 ```
 
 ### Recursion & List Manipulation/Patterns
